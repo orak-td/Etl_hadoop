@@ -1,6 +1,7 @@
 .LOGON IP/user,password
 
 delete from  dp_stage.tbl_stg all;
+delete from dp_prod.tbl_a where partition_col = current_date;
 
 .LOGOFF
 .EXIT
