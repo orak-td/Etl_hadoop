@@ -1,0 +1,6 @@
+.LOGON IP/user,password
+
+delete from  dp_stage.tbl_stg all;
+
+.LOGOFF
+.EXIT

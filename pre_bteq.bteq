@@ -1,0 +1,7 @@
+.LOGON IP/user,password
+
+Insert into dp_stage.tbl_stg
+select * from dp_prod.tbl_a where partition_col = current_date;
+
+.LOGOFF
+.EXIT
